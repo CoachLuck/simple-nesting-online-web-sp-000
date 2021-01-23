@@ -84,9 +84,8 @@ def adding_matz
         }
      }
 
-     yuk = programmer_hash[:yukihiro_matsumoto]
-     yuk[:known_for] = "Ruby"
-     yuk[:languages] = [ "LISP", "C" ]
+     yuk = { known_for: "Ruby", languages = ["LISP", "C"] }
+     programmer_hash[:yukihiro_matsumoto] = yuk
 end
 
 def changing_alan
