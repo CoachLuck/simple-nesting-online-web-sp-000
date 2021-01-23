@@ -63,10 +63,10 @@ end
 
 def adding_matz
 # add the following information to the top level of programmer_hash
-yuk = :yukihiro_matsumoto => {
-  :known_for => "Ruby",
-   :languages => ["LISP", "C"]
-}
+# :yukihiro_matsumoto => {
+#   :known_for => "Ruby",
+#    :languages => ["LISP", "C"]
+# }
 
 	programmer_hash =
  		{
@@ -84,7 +84,9 @@ yuk = :yukihiro_matsumoto => {
         }
      }
 
-     programmer_hash[yuk]
+     yuk = programmer_hash[:yukihiro_matsumoto]
+     yuk[:known_for] = "Ruby"
+     yuk[:languages] = [ "LISP", "C" ]
 end
 
 def changing_alan
